@@ -359,20 +359,7 @@ print_sudoku(tuple[1])
 
      
 '''
-def in_lab_component(sudoku: List[List[int]]):
-	print("Testcases for In Lab evaluation")
-	print("Get Block Number:")
-	print(get_block_num(sudoku,(4,4)))
-	print(get_block_num(sudoku,(7,2)))
-	print(get_block_num(sudoku,(2,6)))
-	print("Get Block:")
-	print(get_block(sudoku,3))
-	print(get_block(sudoku,5))
-	print(get_block(sudoku,9))
-	print("Get Row:")
-	print(get_row(sudoku,3))
-	print(get_row(sudoku,5))
-	print(get_row(sudoku,9))
+
 
 
 # Following is the driver code
@@ -386,9 +373,7 @@ if __name__ == "__main__":
 	# Try to solve the sudoku
 	possible, sudoku = sudoku_solver(sudoku)
 
-	# The following line is for the in-lab component
-	#in_lab_component(sudoku)
-	# Show the result of the same to your TA to get your code evaulated
+	
 
 	# Check if it could be solved
 	if possible:
